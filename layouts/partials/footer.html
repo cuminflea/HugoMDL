@@ -12,5 +12,15 @@
     <script src="/js/material.min.js"></script>
     {{ if .IsPage }} {{ if ( eq .Type "post" ) }}<script src="/js/prism.js"></script>{{ end }}{{ end }}
     {{ if .IsNode }} {{ partial "JS-cardmedia.html" . }} {{ partial "JS-fabbutton.html" . }}{{end}}
+    <script>
+    renderMathInElement(
+    document.body,{
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "\\[", right: "\\]", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false}
+    ]});
+    </script>
 </body>
 </html>
