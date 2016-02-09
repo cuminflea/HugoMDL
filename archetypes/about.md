@@ -16,6 +16,14 @@ recentprojects: 5
 photo: "/images/avatar.png"
 cardheaderimage: "/images/default.jpg" #optional: default solid color if unset
 cardbackground: "#263238" #optional: card background color; only shows when no image specified
+"author":
+    name: "Firstname Lastname"
+    description: "Writer of stuff"
+    website: "http://example.com/"
+    email: "firstname@example.com"
+    twitter: "https://twitter.com/"
+    github: "https://github.com/"
+    image: "/images/avatar-64x64.png"
 ---
 
 #### Education
