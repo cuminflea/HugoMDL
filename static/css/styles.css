@@ -85,8 +85,26 @@ body .hugo-blog {
   padding: 16px;
   min-height: 64px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  align-items: stretch;
 }
+/* .hugo-blog .mdl-card__supporting-text p { */
+/*   width: 100%; */
+/*   padding: 16px; */
+/*   min-height: 64px; */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   align-items:stretch; */
+/* } */
+/* .hugo-blog .mdl-card__supporting-text h* { */
+/*   width: 100%; */
+/*   padding: 16px; */
+/*   min-height: 64px; */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   align-items:stretch; */
+/* } */
 .hugo-blog .mdl-card__supporting-text strong {
   font-weight: 400;
 }
@@ -284,13 +302,23 @@ body .hugo-blog {
   border: 0;
   display: flex;
   flex-direction: column;
-}
-.hugo-blog--blogpost .meta + .mdl-card__supporting-text p {
   max-width: 700px;
   margin: 16px auto;
   font-size: 16px;
   line-height: 28px;
 }
+/* .hugo-blog--blogpost .meta + .mdl-card__supporting-text p { */
+/*   max-width: 700px; */
+/*   margin: 16px auto; */
+/*   font-size: 16px; */
+/*   line-height: 28px; */
+/* } */
+/* .hugo-blog--blogpost .meta + .mdl-card__supporting-text h1,h2,h3 { */
+/*   max-width: 700px; */
+/*   margin: 16px auto; */
+/*   /\* font-size: 32px; *\/ */
+/*   line-height: 28px; */
+/* } */
 .hugo-blog .hugo-content img {
   max-width: 100%;
   height: auto;
@@ -412,6 +440,7 @@ body .hugo-blog {
 .hugo-blog .about .about-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
   padding-top: 110px;
 }
