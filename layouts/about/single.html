@@ -40,8 +40,9 @@
           {{ end }}
       </div> 
       <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
-        <a href={{ .Params.author.website }}>{{ .Params.author.name }}</a>
-        <p>{{ .Params.author.description }}</p>
+        <!-- <a href={{ .Params.author.website }}>{{ .Params.author.name }}</a> -->
+        <!-- <p>{{ .Params.author.description }}</p> -->
+        <p><q>{{ .Params.quote }}</q></p>
         {{ partial "disqus.html" . }} 
       </div>
     </div>
